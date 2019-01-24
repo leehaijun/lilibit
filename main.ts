@@ -112,7 +112,7 @@ namespace lili_robot {
         let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
         return Math.floor(d / 40);
     }
-    //% blockId=lilibit_ultrasonic_car block="红外避障传感器测距返回值(mm)"
+    //% blockId=lilibit_ir_car block="红外避障传感器测距返回值(mm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
