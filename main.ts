@@ -125,7 +125,7 @@ namespace lili_robot {
 
         return Math.floor(d / 15);
     }
-    //% blockId=mbit_Avoid_Sensor block="红外障碍物检测|value %value"
+    //% blockId=mbit_Avoid_Sensor block="红外障碍物检测 |%value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
