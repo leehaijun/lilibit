@@ -1,6 +1,10 @@
-//% color="#C814B8" weight=25 icon="\uf1d4"
+lilibit_测距.Ultrasonic_Car()//% color="#C814B8" weight=25 icon="\uf1d4"
 namespace lilibit_测距 {
-
+    //% blockId=mbit_ultrasonic_car block="ultrasonic return distance(cm)"
+    //% color="#006400"
+    //% weight=98
+    //% blockGap=10
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Ultrasonic_Car(): number {
 
         // send pulse
@@ -13,6 +17,6 @@ namespace lilibit_测距 {
 
         // read pulse
         let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
-        return Math.floor(d / 58);
+        return Math.floor(d / 40);
     }
 } 
