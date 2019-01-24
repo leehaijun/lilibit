@@ -2,6 +2,7 @@
     "name": "lilibit",
     "version": "0.0.4",
     "description": "",
+        "license": "GNU",
     "dependencies": {
         "core": "*",
     },
