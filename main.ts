@@ -93,7 +93,7 @@ namespace lili_robot {
         buf[4] = (off >> 8) & 0xff;
         pins.i2cWriteBuffer(PCA9685_ADD, buf);
     }
-    //% blockId=mbit_ultrasonic_car block="ultrasonic return distance(cm)"
+    //% blockId=lilibit_ultrasonic_car block="超声波测距返回值(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -112,7 +112,7 @@ namespace lili_robot {
         let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
         return Math.floor(d / 40);
     }
-    //% blockId=mbit_ultrasonic_car block="avoid IR sensor return distance(mm)"
+    //% blockId=lilibit_ultrasonic_car block="红外避障传感器测距返回值(mm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -125,7 +125,7 @@ namespace lili_robot {
 
         return Math.floor(d / 15);
     }
-    //% blockId=mbit_Avoid_Sensor block="Avoid_Sensor|value %value"
+    //% blockId=mbit_Avoid_Sensor block="红外障碍物检测|value %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -317,7 +317,7 @@ namespace lili_robot {
         //pins.analogWritePin(AnalogPin.P1, 1023-speed);
 
     }
-    //% blockId=mbit_CarCtrl block="CarCtrl|%index"
+    //% blockId=lilibit_CarCtrl block="小车控制|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -333,7 +333,7 @@ namespace lili_robot {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-    //% blockId=mbit_CarCtrlSpeed block="CarCtrlSpeed|%index|speed1 %speed1|speed2 %speed2"
+    //% blockId=lilibit_CarCtrlSpeed block="车速控制|%index|左轮 %speed1|右轮 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
