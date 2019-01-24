@@ -6,5 +6,5 @@
         "rootDir": "."
     },
     "exclude": ["pxt_modules/**/*test.ts"],
-     "李李机器人.Ultrasonic_Car|block": "超声波返回（cm）",
+     "lili_robot.Ultrasonic_Car|block": "超声波返回（cm）",
 }
