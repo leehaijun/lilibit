@@ -1,5 +1,5 @@
 //% color="#C814B8" weight=25 icon="\uf1d4"
-namespace 李李机器人 {
+namespace lili_robot {
     let initialized = false
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
