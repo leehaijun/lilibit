@@ -4,7 +4,7 @@
     "description": "",
         "license": "GNU",
     "dependencies": {
-        "core": "*",
+        "core": "*"
     },
     "files": [
         "README.md",
