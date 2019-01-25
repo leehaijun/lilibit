@@ -112,11 +112,11 @@ namespace lili_robot {
         let d = pins.pulseIn(DigitalPin.P15, PulseValue.High, 43200);
         return Math.floor(d / 40);
     }
-    //% blockId=lilibit_ir_car block="红外避障传感器测距返回值(mm)"
+    //% blockId=lilibit_avoid_ir_car block="红外避障传感器测距返回值(mm)"
     //% color="#006400"
-    //% weight=98
+    //% weight=94
     //% blockGap=10
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=8
     export function Avoid_IR_Car(): number {
         pins.digitalWritePin(DigitalPin.P9, 0);
 
@@ -125,7 +125,7 @@ namespace lili_robot {
 
         return Math.floor(d / 15);
     }
-    //% blockId=mbit_Avoid_Sensor block="红外障碍物检测 |%value"
+    //% blockId=lilibit_Avoid_Sensor block="红外障碍物检测 |%value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
